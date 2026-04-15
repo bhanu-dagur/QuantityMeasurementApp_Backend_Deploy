@@ -1,0 +1,35 @@
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
+using QuantityMeasurementAppBusinessLayer.Interface;
+using QuantityMeasurementAppModelLayer.DTO;
+
+namespace QuantityMeasurementAPI.Controller;
+
+[Route("api/[controller]")]
+[ApiController]
+public class AuthController : ControllerBase
+{
+    private readonly IAuthService _authService;
+
+    public AuthController(IAuthService authService)
+    {
+        _authService = authService;
+    }
+    [HttpPost("register")]
+    public async Task<IActionResult> Register([FromBody] RegisterDTO registerDTO)
+    {
+        
+        await _authService.Register(registerDTO);
+        return Ok();
+    }
+    [HttpPost("login")]
+    public async Task<IActionResult> Login([FromBody] LoginDTO loginDTO)
+    {
+        var token = await _authService.Login(loginDTO);
+
+        return Ok(new
+        {
+            token = token 
+        });
+    }
+}
