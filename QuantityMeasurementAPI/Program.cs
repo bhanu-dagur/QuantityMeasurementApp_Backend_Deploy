@@ -41,8 +41,8 @@ builder.Services.AddAuthentication(options =>
 {
     options.TokenValidationParameters = new TokenValidationParameters
     {
-        ValidateIssuer = true,
-        ValidateAudience = true,
+        ValidateIssuer = false,
+        ValidateAudience = false,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
         ValidIssuer = builder.Configuration["Jwt:Issuer"],
@@ -66,19 +66,18 @@ AppConfig.ConnectionString = builder.Configuration.GetConnectionString("DefaultC
 
 builder.Services.AddCors(options =>
 {
-    options.AddDefaultPolicy(policy =>
-    {
-        policy.WithOrigins("https://quantitymeasurementapp-frontend-deploy.onrender.com")
-              .AllowAnyHeader()
-              .AllowAnyMethod();
-    });
+    options.AddPolicy("AllowFrontend",
+        policy => policy
+            .WithOrigins("https://quantitymeasurementapp-frontend-deploy.onrender.com")
+            .AllowAnyHeader()
+            .AllowAnyMethod());
 });
 
 
 
 var app = builder.Build();
 
-app.UseCors();
+app.UseCors("AllowFrontend");
 
 
 
@@ -118,4 +117,3 @@ app.MapControllers();
 var port = Environment.GetEnvironmentVariable("PORT") ?? "10000";
 app.Run($"http://0.0.0.0:{port}");
 
-app.Run(); 
