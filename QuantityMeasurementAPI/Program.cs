@@ -70,14 +70,17 @@ builder.Services.AddCors(options =>
     {
         policy.WithOrigins("https://quantitymeasurementapp-frontend-deploy.onrender.com")
               .AllowAnyHeader()
-              .AllowAnyMethod()
-              .AllowCredentials();
+              .AllowAnyMethod();
     });
 });
 
+
+
 var app = builder.Build();
 
-app.UseCors("AllowAll");
+app.UseCors();
+
+
 
 using (var scope = app.Services.CreateScope())
 {
