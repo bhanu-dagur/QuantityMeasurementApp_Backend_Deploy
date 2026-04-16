@@ -25,11 +25,16 @@ public class AuthController : ControllerBase
     [HttpPost("login")]
     public async Task<IActionResult> Login([FromBody] LoginDTO loginDTO)
     {
-        var token = await _authService.Login(loginDTO);
+        try{var token = await _authService.Login(loginDTO);
 
         return Ok(new
         {
             token = token 
-        });
+        });}
+        catch(Exception ex)
+        {
+            return StatusCode(500,new {mesage=ex.Message,
+            inner=ex.InnerException?.Message});
+        }
     }
 }
