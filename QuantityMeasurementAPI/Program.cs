@@ -29,7 +29,10 @@ builder.Services.AddScoped<IMeasurementHistoryRepository, MeasurementHistoryRepo
 //NEW REPOSITORY
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IMeasurementRepository, MeasurementRepository>();
+builder.Services.AddDbContext<AppDbContext>(options =>{
 
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -53,10 +56,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
-builder.Services.AddDbContext<AppDbContext>(options =>{
 
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
 
 // for ADO.net  
 AppConfig.ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection") ;

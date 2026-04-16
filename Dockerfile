@@ -9,6 +9,7 @@ RUN dotnet publish QuantityMeasurementAPI/QuantityMeasurementAPI.csproj -c Relea
 
 # Stage 2: Runtime
 FROM mcr.microsoft.com/dotnet/aspnet:10.0
+RUN apt-get update && apt-get install -y libkrb5-3
 WORKDIR /app
 
 # Copy build output
