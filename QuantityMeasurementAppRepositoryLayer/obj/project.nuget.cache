@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lsP23PcKOIY=",
+  "dgSpecHash": "/yrhqTkmT9E=",
   "success": true,
-  "projectFilePath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppRepositoryLayer\\QuantityMeasurementAppRepositoryLayer.csproj",
+  "projectFilePath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppRepositoryLayer\\QuantityMeasurementAppRepositoryLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dell\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\microsoft.bcl.cryptography\\9.0.13\\microsoft.bcl.cryptography.9.0.13.nupkg.sha512",

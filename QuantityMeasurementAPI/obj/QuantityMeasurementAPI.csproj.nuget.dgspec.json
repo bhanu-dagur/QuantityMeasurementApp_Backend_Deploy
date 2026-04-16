@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAPI\\QuantityMeasurementAPI.csproj": {}
+    "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAPI\\QuantityMeasurementAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAPI\\QuantityMeasurementAPI.csproj": {
+    "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAPI\\QuantityMeasurementAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAPI\\QuantityMeasurementAPI.csproj",
+        "projectUniqueName": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAPI\\QuantityMeasurementAPI.csproj",
         "projectName": "QuantityMeasurementAPI",
-        "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAPI\\QuantityMeasurementAPI.csproj",
+        "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAPI\\QuantityMeasurementAPI.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAPI\\obj\\",
+        "outputPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppBusinessLayer\\QuantityMeasurementAppBusinessLayer.csproj": {
-                "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppBusinessLayer\\QuantityMeasurementAppBusinessLayer.csproj"
+              "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppBusinessLayer\\QuantityMeasurementAppBusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppBusinessLayer\\QuantityMeasurementAppBusinessLayer.csproj"
               },
-              "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj": {
-                "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj"
+              "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj": {
+                "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj"
               }
             }
           }
@@ -88,6 +88,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[10.0.5, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[10.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -531,14 +535,14 @@
         }
       }
     },
-    "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppBusinessLayer\\QuantityMeasurementAppBusinessLayer.csproj": {
+    "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppBusinessLayer\\QuantityMeasurementAppBusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppBusinessLayer\\QuantityMeasurementAppBusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppBusinessLayer\\QuantityMeasurementAppBusinessLayer.csproj",
         "projectName": "QuantityMeasurementAppBusinessLayer",
-        "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppBusinessLayer\\QuantityMeasurementAppBusinessLayer.csproj",
+        "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppBusinessLayer\\QuantityMeasurementAppBusinessLayer.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppBusinessLayer\\obj\\",
+        "outputPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppBusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -559,8 +563,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppRepositoryLayer\\QuantityMeasurementAppRepositoryLayer.csproj": {
-                "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppRepositoryLayer\\QuantityMeasurementAppRepositoryLayer.csproj"
+              "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppRepositoryLayer\\QuantityMeasurementAppRepositoryLayer.csproj": {
+                "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppRepositoryLayer\\QuantityMeasurementAppRepositoryLayer.csproj"
               }
             }
           }
@@ -880,14 +884,14 @@
         }
       }
     },
-    "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj": {
+    "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj",
+        "projectUniqueName": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj",
         "projectName": "QuantityMeasurementAppModelLayer",
-        "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj",
+        "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppModelLayer\\obj\\",
+        "outputPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppModelLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1219,14 +1223,14 @@
         }
       }
     },
-    "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppRepositoryLayer\\QuantityMeasurementAppRepositoryLayer.csproj": {
+    "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppRepositoryLayer\\QuantityMeasurementAppRepositoryLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppRepositoryLayer\\QuantityMeasurementAppRepositoryLayer.csproj",
+        "projectUniqueName": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppRepositoryLayer\\QuantityMeasurementAppRepositoryLayer.csproj",
         "projectName": "QuantityMeasurementAppRepositoryLayer",
-        "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppRepositoryLayer\\QuantityMeasurementAppRepositoryLayer.csproj",
+        "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppRepositoryLayer\\QuantityMeasurementAppRepositoryLayer.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppRepositoryLayer\\obj\\",
+        "outputPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppRepositoryLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1247,8 +1251,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj": {
-                "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj"
+              "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj": {
+                "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj"
               }
             }
           }

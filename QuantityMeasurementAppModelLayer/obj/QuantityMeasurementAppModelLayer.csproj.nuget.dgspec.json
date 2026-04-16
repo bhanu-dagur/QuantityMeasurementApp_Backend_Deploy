@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj": {}
+    "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj": {
+    "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj",
+        "projectUniqueName": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj",
         "projectName": "QuantityMeasurementAppModelLayer",
-        "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj",
+        "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppModelLayer\\obj\\",
+        "outputPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppModelLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

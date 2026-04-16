@@ -887,6 +887,37 @@
           }
         }
       },
+      "Npgsql/10.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL/10.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "[10.0.4, 11.0.0)",
+          "Microsoft.EntityFrameworkCore.Relational": "[10.0.4, 11.0.0)",
+          "Npgsql": "10.0.2"
+        },
+        "compile": {
+          "lib/net10.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/10.1.5": {
         "type": "package",
         "dependencies": {
@@ -3231,6 +3262,40 @@
         "packageIcon.png"
       ]
     },
+    "Npgsql/10.0.2": {
+      "sha512": "q5RfBI+wywJSFUNDE1L4ZbHEHCFTblo8Uf6A6oe4feOUFYiUQXyAf9GBh5qEZpvJaHiEbpBPkQumjEhXCJxdrg==",
+      "type": "package",
+      "path": "npgsql/10.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net10.0/Npgsql.dll",
+        "lib/net10.0/Npgsql.xml",
+        "lib/net8.0/Npgsql.dll",
+        "lib/net8.0/Npgsql.xml",
+        "lib/net9.0/Npgsql.dll",
+        "lib/net9.0/Npgsql.xml",
+        "npgsql.10.0.2.nupkg.sha512",
+        "npgsql.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL/10.0.1": {
+      "sha512": "P6EwH0Q4xkaA264iNZDqCPhWt8pscfUGxXazDQg4noBfqjoOlk4hKWfvBjF9ZX3R/9JybRmmJfmxr2iBMj0EpA==",
+      "type": "package",
+      "path": "npgsql.entityframeworkcore.postgresql/10.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net10.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
+        "lib/net10.0/Npgsql.EntityFrameworkCore.PostgreSQL.xml",
+        "npgsql.entityframeworkcore.postgresql.10.0.1.nupkg.sha512",
+        "npgsql.entityframeworkcore.postgresql.nuspec",
+        "postgresql.png"
+      ]
+    },
     "Swashbuckle.AspNetCore/10.1.5": {
       "sha512": "/eNk9z/8quXhDX14o3XLbwAX/84uIWSbiUD7cI/UrQnoBMOiyAtzKxNEJUtf/TyxjFpcXxE9FAfLvtbNpxHBSg==",
       "type": "package",
@@ -3640,6 +3705,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 10.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 10.0.5",
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 10.0.1",
       "QuantityMeasurementAppBusinessLayer >= 1.0.0",
       "QuantityMeasurementAppModelLayer >= 1.0.0",
       "Swashbuckle.AspNetCore >= 10.1.5"
@@ -3652,11 +3718,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAPI\\QuantityMeasurementAPI.csproj",
+      "projectUniqueName": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAPI\\QuantityMeasurementAPI.csproj",
       "projectName": "QuantityMeasurementAPI",
-      "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAPI\\QuantityMeasurementAPI.csproj",
+      "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAPI\\QuantityMeasurementAPI.csproj",
       "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAPI\\obj\\",
+      "outputPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3677,11 +3743,11 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppBusinessLayer\\QuantityMeasurementAppBusinessLayer.csproj": {
-              "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppBusinessLayer\\QuantityMeasurementAppBusinessLayer.csproj"
+            "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppBusinessLayer\\QuantityMeasurementAppBusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppBusinessLayer\\QuantityMeasurementAppBusinessLayer.csproj"
             },
-            "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj": {
-              "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityManagement_App\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj"
+            "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj": {
+              "projectPath": "C:\\Users\\dell\\OneDrive\\Desktop\\QMA\\QuantityMeasurementApp_Backend_Deploy\\QuantityMeasurementAppModelLayer\\QuantityMeasurementAppModelLayer.csproj"
             }
           }
         }
@@ -3733,6 +3799,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[10.0.5, )"
+          },
+          "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "target": "Package",
+            "version": "[10.0.1, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
