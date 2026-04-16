@@ -68,7 +68,7 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy.WithOrigins("https://quantitymeasurementapp-frontend-deploy.onrender.com", "http://localhost:4000")
+        policy.WithOrigins("https://quantitymeasurementapp-frontend-deploy.onrender.com")
               .AllowAnyHeader()
               .AllowAnyMethod()
               .AllowCredentials();
@@ -77,7 +77,7 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-app.UseCors();
+app.UseCors("AllowAll");
 
 using (var scope = app.Services.CreateScope())
 {

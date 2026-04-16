@@ -10,7 +10,7 @@ using System.Net.Http.Headers;
 
 namespace QuantityMeasurementAPI.Controller;
 
-[Route("api/")]
+[Route("api/quantity")]
 [ApiController]
 public class QuantityMangementController : ControllerBase
 {
@@ -19,7 +19,7 @@ public class QuantityMangementController : ControllerBase
     {
         this._measurementService = measurementService;
     }
-    [HttpPost("Conversion/{toUnit}")]
+    [HttpPost("conversion/{toUnit}")]
      public async Task<IActionResult> QuantityMeasurementConversion([FromBody]  QuantityDTO newProduct,[FromRoute] string toUnit)
     {
         string? userId=User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -44,7 +44,7 @@ public class QuantityMangementController : ControllerBase
         
     }
 
-    [HttpPost("Subtraction")]
+    [HttpPost("subtraction")]
     public async Task<IActionResult> QuantityMeasurementSubtraction([FromBody] AirthmeticDTO newEntity, [FromQuery] string toUnit)
     {
         string? userId=User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -56,7 +56,7 @@ public class QuantityMangementController : ControllerBase
         });
     }
 
-    [HttpPost("Division")]
+    [HttpPost("division")]
     public async Task<IActionResult> QuantityMeasurementDivision([FromBody] AirthmeticDTO newEntity, [FromQuery] string toUnit)
     {
         string? userId=User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -69,7 +69,7 @@ public class QuantityMangementController : ControllerBase
     
     }
 
-    [HttpPost ("CheckEquaity")]
+    [HttpPost ("checkEquaity")]
     public async Task<IActionResult> CheckEquaity([FromBody] AirthmeticDTO newEntity)
     {
         string? userId=User.FindFirst(ClaimTypes.NameIdentifier)?.Value;

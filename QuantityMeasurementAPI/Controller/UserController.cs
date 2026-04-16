@@ -6,7 +6,7 @@ using System.Security.Claims;
 namespace QuantityMeasurementAPI.Controller;
 
 [ApiController]
-[Route("api/User")]
+[Route("api/user")]
 
 public class UserController : ControllerBase
 {

@@ -5,7 +5,7 @@ using QuantityMeasurementAppModelLayer.DTO;
 
 namespace QuantityMeasurementAPI.Controller;
 
-[Route("api/[controller]")]
+[Route("api/auth")]
 [ApiController]
 public class AuthController : ControllerBase
 {
