@@ -15,6 +15,6 @@ public class UserService : IUserService
     public async Task<ICollection<QuantityMeasurementHistoryEntity>> GetHistory(string userId)
     {
         int id=int.Parse(userId);
-        return await _userRepository.GetHistory (id);
+        return await _userRepository.GetHistory(id);
     }
 }
