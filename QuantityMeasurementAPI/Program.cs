@@ -70,14 +70,15 @@ builder.Services.AddCors(options =>
         policy => policy
             .WithOrigins("https://quantitymeasurementapp-frontend-deploy.onrender.com")
             .AllowAnyHeader()
-            .AllowAnyMethod());
+            .AllowAnyMethod()
+        );
 });
 
 
 
 var app = builder.Build();
 
-app.UseCors("AllowFrontend");
+
 
 
 
@@ -107,7 +108,7 @@ using (var scope = app.Services.CreateScope())
 app.MapGet("/", () => "Hello World from QuantityMeasurementAPI!");
     
 
-
+app.UseCors("AllowFrontend");
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
