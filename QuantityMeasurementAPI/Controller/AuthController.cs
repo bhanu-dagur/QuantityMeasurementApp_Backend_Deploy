@@ -19,8 +19,13 @@ public class AuthController : ControllerBase
     public async Task<IActionResult> Register([FromBody] RegisterDTO registerDTO)
     {
         
-        await _authService.Register(registerDTO);
-        return Ok();
+        try{await _authService.Register(registerDTO);
+        return Ok(new {message="User Registered Successfully"});}
+        catch(Exception ex)
+        {
+            return StatusCode(500,new {mesage=ex.Message,
+            inner=ex.InnerException?.Message});
+        }
     }
     [HttpPost("login")]
     public async Task<IActionResult> Login([FromBody] LoginDTO loginDTO)
