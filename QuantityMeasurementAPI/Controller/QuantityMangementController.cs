@@ -37,8 +37,8 @@ public class QuantityMangementController : ControllerBase
         {
             string? userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-            if (string.IsNullOrEmpty(userId))
-                return Unauthorized("Invalid token");
+            // if (string.IsNullOrEmpty(userId))
+            //     return Unauthorized("Invalid token");
 
             QuantityDTO result = await _measurementService.PerformConversion(newProduct, toUnit.ToUpper(), userId);
 
